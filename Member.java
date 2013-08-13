@@ -8,9 +8,12 @@ public class Member {
 	private String lastName;
 	private String phoneNumber;
 	ArrayList<Address> addresses = new ArrayList<>();
-	public Member (){
-		
+	public Member (String firstName, String lastName, String phoneNumber){
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phoneNumber = phoneNumber;
 	}
+	//Getters & Setters starts here
 	public void setMemberId(int memberId){
 		this.memberId = memberId;
 	}
@@ -41,4 +44,5 @@ public class Member {
 	public ArrayList<Address> getAddress(){
 		return this.addresses;
 	}
+	//Getters & Setters end here
 }

@@ -3,6 +3,8 @@ package librarysystem;
 import java.util.GregorianCalendar;
 
 public class Loan {
+	private Copy copy;
+	private Member member;
 	private GregorianCalendar dueReturnDate;
 	private GregorianCalendar checkOutDate;
 	private GregorianCalendar actualRetrunDate;
