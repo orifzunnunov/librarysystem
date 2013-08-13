@@ -1,11 +1,13 @@
 package librarysystem;
 
+import java.util.ArrayList;
+
 public class Memeber {
 	private int memberId;
 	private String firstName;
 	private String lastName;
 	private String phoneNumber;
-
+	ArrayList<Address> addresses = new ArrayList<>();
 	public void setMemberId(int memberId){
 		this.memberId = memberId;
 	}
