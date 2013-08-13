@@ -2,12 +2,15 @@ package librarysystem;
 
 import java.util.ArrayList;
 
-public class Memeber {
+public class Member {
 	private int memberId;
 	private String firstName;
 	private String lastName;
 	private String phoneNumber;
 	ArrayList<Address> addresses = new ArrayList<>();
+	public Member (){
+		
+	}
 	public void setMemberId(int memberId){
 		this.memberId = memberId;
 	}
@@ -31,5 +34,11 @@ public class Memeber {
 	}
 	public String getPhoneNumber(){
 		return phoneNumber;
+	}
+	public void setAddress(Address address){
+		addresses.add(address);
+	}
+	public ArrayList<Address> getAddress(){
+		return this.addresses;
 	}
 }
